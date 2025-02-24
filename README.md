@@ -75,11 +75,23 @@ O código realiza as seguintes etapas:
    - Os meses com maiores vendas foram janeiro, outubro e novembro, enquanto os de menores vendas foram fevereiro, julho e setembro. No entanto, há uma constância nas vendas ao longo do ano.
 
 10. **Contagem de Novos Clientes por Mês**
-    - Identifica-se a distribuição de novos clientes ao longo dos meses.
+   - Identifica-se a distribuição de novos clientes ao longo dos meses.
 
     ![Quantidade de novos Clientes por Mês](<image/Novos Clientes por Mes.png>)
 
-    - Os meses com maior volume de vendas coincidem, em geral, com os meses de maior captação de novos clientes. Isso sugere uma relação entre o crescimento da base de clientes e o aumento no faturamento.
+   - Os meses com maior volume de vendas coincidem, em geral, com os meses de maior captação de novos clientes. Isso sugere uma relação entre o crescimento da base de clientes e o aumento no faturamento.
+
+   - Correlação Encontrada: O coeficiente de correlação calculado foi 
+    0.6437, indicando uma correlação moderada a forte entre o número de novos clientes e o valor total de vendas por mês.
+
+   ![Correlação Entre Valor de Vendas e Novos clientes](image/correlacao.png)
+
+   
+   - Codigo usado para calcular correlação 
+   `correlation = aggregated['Customer_Count'].corr(aggregat['Total_Sales'])`
+
+
+
 
 # Conclusão
 
