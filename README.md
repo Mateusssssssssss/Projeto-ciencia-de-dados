@@ -39,7 +39,7 @@ O código realiza as seguintes etapas:
 
    ![Boxplot](image/Boxplot.png)
 
-5. **Análise de Vendas por Região**
+5. **Distribuição de Vendas por Região**
    - Agrupa-se os dados por região (`Region`) e calcula-se o total de vendas para cada uma, visualizando os resultados em um gráfico de barras.
    ![Valor de Vendas Por Região](<image/Valor de Vendas por Regiao.png>)
 
@@ -89,8 +89,10 @@ O código realiza as seguintes etapas:
    ![Correlação Entre Valor de Vendas e Novos clientes](image/correlacao.png)
    ![Arquivo com todo calculo](regressao_correlacao_newcustomer.py)
    
-   - Codigo usado para calcular correlação 
-   `correlation = aggregated['Customer_Count'].corr(aggregat['Total_Sales'])`
+   - Codigo usado para calcular correlação:
+
+   ```python 
+   correlation = aggregated['Customer_Count'].corr(aggregated['Total_Sales'])
 
 11. **Análise de Correlação entre Clientes Recorrentes e Valor de Vendas**
    - Durante a análise dos dados de vendas, foi calculada a correlação entre o  número de clientes recorrentes e o valor total de vendas. O valor obtido para a correlação foi de 0.883, o que indica uma correlação muito forte entre essas duas variáveis.
@@ -99,7 +101,12 @@ O código realiza as seguintes etapas:
    ![Arquivo com todo o calculo](regressao_correlacao_returning.py)
 
    - Codigo usado para calcular correlação:
-   `correlation = aggregated['Customer_Count'].corr(aggregated['Total_Sales'])`
+
+O código usado para calcular a correlação foi:
+
+```python
+correlation = aggregated['Customer_Count'].corr(aggregated['Total_Sales'])
+
 
    - Esse resultado sugere que, conforme o número de clientes recorrentes aumenta, o valor de vendas também tende a crescer de forma significativa. Isso pode ser um indicativo de que os clientes recorrentes são responsáveis por uma parcela considerável das vendas, o que reforça a importância de estratégias de fidelização de clientes.
 
