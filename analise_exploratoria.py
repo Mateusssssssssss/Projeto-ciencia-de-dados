@@ -1,9 +1,17 @@
 import pandas as pd
 import seaborn as sb
 import matplotlib.pyplot as plt
+from scipy import stats
 #Ler o dataset
 dados = pd.read_csv('sales_data.csv')
 print(dados.head())
+#Variaveis para teste shapiro
+dados_discount = dados['Discount']
+dados_salesamount = dados['Sales_Amount']
+#confirmado assimetria nos dados, ja que se trata de vendas, onde pode se ter outlier muito altos ou baixos
+#dependendo do numero de vendas
+shapiro = stats.shapiro(dados_salesamount)
+print(shapiro)
 #descrição dos dados(minino e maximo, desvio padrao, quartil, media)
 descricao = dados.describe()
 print(descricao)
