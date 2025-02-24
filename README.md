@@ -84,6 +84,8 @@ O código realiza as seguintes etapas:
    - Correlação Encontrada: O coeficiente de correlação calculado foi 
     0.6437, indicando uma correlação moderada a forte entre o número de novos clientes e o valor total de vendas por mês.
 
+   - Para melhor compreender essa relação, foi criado um gráfico de dispersão com linha de regressão, demonstrando a tendência positiva entre essas variáveis.
+
    ![Correlação Entre Valor de Vendas e Novos clientes](image/correlacao.png)
 
    
