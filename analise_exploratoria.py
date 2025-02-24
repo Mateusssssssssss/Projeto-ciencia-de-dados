@@ -21,8 +21,8 @@ print(dados_dup)
 #Verificando se havia algum dados nulo no dataset
 dados_null = dados.isnull().sum()
 print(dados_null)
-#Verificando se algum Outlier
-#Verificado que não Outlier
+#Verificando se há algum Outlier
+#Verificado que não há Outlier
 sb.boxplot(dados[['Quantity_Sold', 'Unit_Price', 'Discount']])
 plt.show()
 #Comparação de valor de vendas por região
