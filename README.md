@@ -87,11 +87,21 @@ O código realiza as seguintes etapas:
    - Para melhor compreender essa relação, foi criado um gráfico de dispersão com linha de regressão, demonstrando a tendência positiva entre essas variáveis.
 
    ![Correlação Entre Valor de Vendas e Novos clientes](image/correlacao.png)
-
+   ![Arquivo com todo calculo](regressao_correlacao_newcustomer.py)
    
    - Codigo usado para calcular correlação 
    `correlation = aggregated['Customer_Count'].corr(aggregat['Total_Sales'])`
 
+11. **Análise de Correlação entre Clientes Recorrentes e Valor de Vendas**
+   - Durante a análise dos dados de vendas, foi calculada a correlação entre o  número de clientes recorrentes e o valor total de vendas. O valor obtido para a correlação foi de 0.883, o que indica uma correlação muito forte entre essas duas variáveis.
+
+   ![Correlação de Valor de vendas e Clientes Recorrentes](image/correlacao_returning.png)
+   ![Arquivo com todo o calculo](regressao_correlacao_returning.py)
+
+   - Codigo usado para calcular correlação:
+   `correlation = aggregated['Customer_Count'].corr(aggregated['Total_Sales'])`
+
+   - Esse resultado sugere que, conforme o número de clientes recorrentes aumenta, o valor de vendas também tende a crescer de forma significativa. Isso pode ser um indicativo de que os clientes recorrentes são responsáveis por uma parcela considerável das vendas, o que reforça a importância de estratégias de fidelização de clientes.
 
 
 
